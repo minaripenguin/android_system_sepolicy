@@ -7,6 +7,7 @@
   ( new_objects
     adservices_manager_service
     apexd_select_prop
+    artd
     artd_service
     attestation_verification_service
     bluetooth_config_prop
