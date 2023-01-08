@@ -19,6 +19,9 @@ get_prop(artd, device_config_runtime_native_boot_prop)
 # the ART APEX data directory.
 get_prop(artd, odsign_prop)
 
+# Allow artd to acess bootimage properties
+get_prop(artd, build_bootimage_prop)
+
 # Reading an APK opens a ZipArchive, which unpack to tmpfs.
 # Use tmpfs_domain() which will give tmpfs files created by artd their
 # own label, which differs from other labels created by other processes.
