@@ -23,6 +23,9 @@ get_prop(untrusted_app_30, qemu_sf_lcd_density_prop)
 # allow untrusted_app_30 to read qemu.hw.mainkeys
 get_prop(untrusted_app_30, qemu_hw_prop)
 
+# Allow untrusted_app_30 to read bootimage prop
+get_prop(untrusted_app_30, build_bootimage_prop)
+
 # allow sending RTM_GETNEIGH{TBL} messages.
 allow untrusted_app_30 self:netlink_route_socket nlmsg_getneigh;
 auditallow untrusted_app_30 self:netlink_route_socket nlmsg_getneigh;
